@@ -1,0 +1,33 @@
+<form>
+  <div class="container">
+  <div>
+    <fieldset>
+      <legend> Book Machinary </legend>
+      <p>
+        <label> Select Machine</label>
+        <select name="machines" id="machines" [(ngModel)]="machines">
+          <option value = "tractor"> Tractor</option>
+          <option value = "plough"> Plough</option>
+          <option value = "fertilizer"> Fertilizer Drill</option>
+          <option value = "rotovator"> Rotovator</option>
+          <option value = "ridger"> Ridger</option>
+          <option value = "dieselengine"> Diesel Engine</option>
+          <option value = "bullock"> Bullock Cart</option>
+
+        </select>
+      </p>
+    </fieldset>
+  </div>
+  <div>
+    Book operator: (the operator will be charged a minimal fee of Rs. 200) <br>
+    <input name="op" type="radio" id="operator" value="yes" [(ngModel)]="operator">Yes<br>
+    <input name="op" type="radio" id="operator" value="no" [(ngModel)]="operator">No<br><br>
+
+    Start date: <input name="sdate" type="date" autocomplete="off" placeholder="Start Date" id="sdate" [(ngModel)]="sdate"> <br>
+    Due date: <input name="ddate" type="date" autocomplete="off" placeholder="Due Date" id="ddate"[(ngModel)]="ddate">
+  </div>
+  <div>
+    <button type="submit" id="submit" (click)="onBook()">Submit</button>
+  </div>
+</div>
+</form>

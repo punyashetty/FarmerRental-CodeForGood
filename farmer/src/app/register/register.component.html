@@ -1,0 +1,31 @@
+<form (submit)="registerUser($event)">
+    <div class="container">
+    <div>
+            <input type="text" autocomplete="off" placeholder="First Name" id="fname">
+    </div>
+    <div>
+        <input type="text" autocomplete="off" placeholder="Last Name" id="lname">
+    </div>
+    <div>
+      <input type="text" autocomplete="off" placeholder="Username" id="username">
+    </div>
+    <div>
+      <input type="password" autocomplete="off" placeholder="Password" id="password">
+    </div>
+    <div>
+        <input type="password" autocomplete="off" placeholder="Confirm Password" id="confirm">
+      </div>
+      <div>
+          <input type="text" autocomplete="off" placeholder="9999999999" id="phone">
+        </div>
+        <div>
+            <input type="text" autocomplete="off" placeholder="Location" id="loc">
+          </div>
+          <!--<div>
+              <input type="image" src=""autocomplete="off" placeholder="Location" id="loc">
+            </div> -->
+    <div>
+      <button type="submit" id="submit" (click)="onRegister()">Submit</button>
+    </div>
+  </div>
+  </form>

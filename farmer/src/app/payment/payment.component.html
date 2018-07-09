@@ -1,0 +1,8 @@
+<form>
+  <div>
+      <input type="radio" id="pay" value="now" [(ngModel)]="pay" checked>Pay Now!<br>
+      <input type="radio" id="pay" value="later" [(ngModel)]="pay">Pay Later!<br><br>
+      <button type="submit" id="submit" (click)="onPayment()">Submit</button>
+    
+  </div>
+</form>

@@ -1,0 +1,12 @@
+<form>
+  <div>
+    <input name="uname" type="text" autocomplete="off" placeholder="Username" id="username" [(ngModel)]="username">
+  </div>
+  <div>
+    <input name="pwd" type="password" autocomplete="off" placeholder="Password" id="password" [(ngModel)]="password">
+  </div>
+  <div>
+    <button type="submit" id="submit" (click)="onLogin()">Log In</button>
+    <button type="submit" id="submit" (click)="onRegister()">Sign up</button>
+  </div>
+</form>
